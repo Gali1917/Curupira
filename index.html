@@ -39,11 +39,10 @@
             background-size: cover;
             background-attachment: fixed;
         }
-        header{
+        .header{
             background-color:var(--one);
             width: 100%;
-            height: 80px;
-            box-shadow: var(--black) 0px 5px 0px;
+            height: 70px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -76,16 +75,19 @@
         .account img{
             width: 52px;
             border-radius: 50%;
+            margin-right: 8px;
         }
-
-
         .nav-bar{
             width: 100%;
-            height: 100px;
+            height: 90px;
             background-color: var(--six);
             display: flex;
             align-items: center;
             justify-content: end;
+            box-shadow: 0px 14px 18px 4px;
+            top: 0;
+            position: sticky;
+            z-index: 2;
 
         }
         .nav-bar ul{
@@ -102,11 +104,28 @@
         }
         .cover{
             height: 800px;
-            text-align: center;
-            line-height: 500px;
-            font-size: 12rem;
-            color: var(--white);
-            text-shadow: var(--one) 15px 15px 15px;
+            /* line-height: 800px; */
+        }
+        .cover > img{
+            width: 100%;
+            position: absolute;
+            top: 300px;
+        }
+        .cover .redes-img{
+            display: none;
+        }
+        .redes-img{
+            margin-top: 240px;
+            margin-left: 24px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.26);
+            width: 60px;
+            border-radius: 20px;
+            position: fixed;
+        }
+        .redes-img img{
+            width: 60px;
         }
         .article{
             width: 80%;
@@ -134,6 +153,11 @@
         .description h1{
             font-size: 6rem;
             margin-bottom: 24px;
+            color: var(--one);
+        }
+        .ticket{
+            box-shadow: 0 0 4px 4px;
+            margin-top: 36px;
 
         }
         .article-kit{
@@ -142,7 +166,6 @@
             color:var(--black);
             font-weight: bold;
             padding: 18px;
-            margin-top: 36px;
         }
         .article-kit p{
             margin-top: 8px;
@@ -161,13 +184,13 @@
             align-self: center;
         }
         .box-detail li{
-            border: 1px solid var(--white);
+            border: 1px solid var(--four);
             border-radius: 8px;
             padding: 8px;
         }
         .box-detail a{
             text-decoration: none;
-            color: var(--white);
+            color: var(--four);
             font-weight: bold;
         }
         .footer{
@@ -179,6 +202,100 @@
         .footer p{
             position: absolute;
             right: 0;
+
+        }
+        @media(max-width: 1200px){
+            :root{
+                --ls: 1.2rem;
+                --md: 1.6em;
+                --lg: 2rem;
+            }
+            .header{
+                height: 60px;
+            }
+            .nav-bar{
+                height: 70px;
+            }
+            .description h1{
+                
+            }
+        }
+        @media(max-width: 1024px){
+            .header{
+                height: 50px;
+            }
+            .redes{
+                display: none;
+            }
+
+            .account img{
+                width: 36px;
+            }
+            .nav-bar{
+                height: 60px;
+            }
+            .cover .redes-img{
+                display: block;
+                margin-left: 4px;
+            }
+            .article{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+            }
+            .article img{
+                margin-top: 24px;
+                width: 100%
+            }
+            .description{
+                width: 90%;
+                padding-right: 0;
+                
+            }
+            .description h1{
+                font-size: 5rem;
+
+            }
+            .description p{
+                margin-bottom: 24px;
+            }
+            .ticket{
+                width: 50%;
+                margin: 0 auto;
+            }
+            .article-kit{
+                padding: 8px;
+                margin-top: 8px;
+                width: 100%;
+                margin: 0 auto;
+
+            }
+           
+            .box-detail{
+                margin: 0 auto;
+                width: 100%;
+            }
+            .article p{
+                margin-bottom: 8px;
+            }
+        }
+        @media(max-width: 800px){
+            .article{
+                width: 100%;
+            }
+            .cover{
+                height: 600px;
+            }
+            .redes-img{
+                width: 40px;
+            }
+            .redes-img img{
+                width: 40px;
+                margin-bottom: 12px;
+            }
+        }
+        @media(max-width: 500px){
 
         }
     </style>
@@ -225,28 +342,42 @@
         </nav>
         <section class="content">
             <div class="cover">
-                <!-- <img src="./img/pexels-pixabay-460621.jpg" alt="Panorama"> -->
-                <h1>Curupira Travel</h1>
-
+                <img src="https://i.postimg.cc/6qbbN3S6/Curupira-Travel.png" alt="Panorama">
+                <figure class="redes-img">
+                    <a href="/">
+                        <img src="https://i.postimg.cc/zBjP0pFg/instagram.png" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="https://i.postimg.cc/SKcPzmXV/facebook.png" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="https://i.postimg.cc/kGgYZ8Th/whatsapp.png" alt="">
+                    </a>
+                    <a href="/">
+                        <img src="https://i.postimg.cc/sXyNYb7z/gorjeo.png" alt="">
+                    </a>
+                </figure>
             </div>
             <article class="article">
                 <div class="description">
                     <h1>Servicio de Piscina</h1>
                     <p>Tenemos piscinas con olas para publico, o sola para ti si asi lo deseas, con anticipacion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus impedit corrupti possimus hic enim laborum assumenda ipsum, molestiae praesentium adipisci libero esse, ullam consequatur explicabo voluptates nobis, earum quam?</p>
-                    <div class="article-kit">
-                        <p>$20.000</p>
-                        <p>Una persona</p>
-                        <p>Gratis bebida</p>
-                    </div>
-                    <div class="box-detail">
-                        <ul>
-                            <li>
-                                <a href="/">Reservar</a>
-                            </li>
-                            <li>
-                                <a href="/">Mas Detalles</a>
-                            </li>
-                        </ul>
+                    <div class="ticket">
+                        <div class="article-kit">
+                            <p>$20.000</p>
+                            <p>Una persona</p>
+                            <p>Gratis bebida</p>
+                        </div>
+                        <div class="box-detail">
+                            <ul>
+                                <li>
+                                    <a href="/">Reservar</a>
+                                </li>
+                                <li>
+                                    <a href="/">Mas Detalles</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <img src="https://i.postimg.cc/Kc740s44/piscina.jpg" alt="Piscina">
@@ -256,20 +387,23 @@
                 <div class="description">
                     <h1>Caminata al aire libre</h1>
                     <p>Te guiaremos a una caminata por maravillosos senderos de flora y fauna. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus impedit corrupti possimus hic enim laborum assumenda ipsum, molestiae praesentium adipisci libero esse, ullam consequatur explicabo voluptates nobis, earum quam?</p>
-                    <div class="article-kit">
-                        <p>$20.000</p>
-                        <p>Una persona</p>
-                        <p>Gratis bebida</p>
-                    </div>
-                    <div class="box-detail">
-                        <ul>
-                            <li>
-                                <a href="/">Reservar</a>
-                            </li>
-                            <li>
-                                <a href="/">Mas Detalles</a>
-                            </li>
-                        </ul>
+                    <div class="ticket">
+
+                        <div class="article-kit">
+                            <p>$20.000</p>
+                            <p>Una persona</p>
+                            <p>Gratis bebida</p>
+                        </div>
+                        <div class="box-detail">
+                            <ul>
+                                <li>
+                                    <a href="/">Reservar</a>
+                                </li>
+                                <li>
+                                    <a href="/">Mas Detalles</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <img src="https://i.postimg.cc/yYB3BC2F/273012203-103191272290232-9130648754447244649-n.jpg" alt="Piscina">
@@ -279,20 +413,23 @@
                 <div class="description">
                     <h1>Caminata al aire libre</h1>
                     <p>Te guiaremos a una caminata por maravillosos senderos de flora y fauna. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus impedit corrupti possimus hic enim laborum assumenda ipsum, molestiae praesentium adipisci libero esse, ullam consequatur explicabo voluptates nobis, earum quam?</p>
-                    <div class="article-kit">
-                        <p>$20.000</p>
-                        <p>Una persona</p>
-                        <p>Gratis bebida</p>
-                    </div>
-                    <div class="box-detail">
-                        <ul>
-                            <li>
-                                <a href="/">Reservar</a>
-                            </li>
-                            <li>
-                                <a href="/">Mas Detalles</a>
-                            </li>
-                        </ul>
+                    <div class="ticket">
+
+                        <div class="article-kit">
+                            <p>$20.000</p>
+                            <p>Una persona</p>
+                            <p>Gratis bebida</p>
+                        </div>
+                        <div class="box-detail">
+                            <ul>
+                                <li>
+                                   <a href="/">Reservar</a>
+                                </li>
+                                <li>
+                                    <a href="/">Mas Detalles</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <img src="https://i.postimg.cc/Kc740s44/piscina.jpg" alt="Piscina">
@@ -302,20 +439,23 @@
                 <div class="description">
                     <h1>Servicio de Piscina</h1>
                     <p>Tenemos piscinas con olas para publico, o sola para ti si asi lo deseas, con anticipacion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus impedit corrupti possimus hic enim laborum assumenda ipsum, molestiae praesentium adipisci libero esse, ullam consequatur explicabo voluptates nobis, earum quam?</p>
-                    <div class="article-kit">
-                        <p>$20.000</p>
-                        <p>Una persona</p>
-                        <p>Gratis bebida</p>
-                    </div>
-                    <div class="box-detail">
-                        <ul>
-                            <li>
-                                <a href="/">Reservar</a>
-                            </li>
-                            <li>
-                                <a href="/">Mas Detalles</a>
-                            </li>
-                        </ul>
+                    <div class="ticket">
+
+                        <div class="article-kit">
+                            <p>$20.000</p>
+                            <p>Una persona</p>
+                            <p>Gratis bebida</p>
+                        </div>
+                        <div class="box-detail">
+                            <ul>
+                                <li>
+                                    <a href="/">Reservar</a>
+                                </li>
+                                <li>
+                                    <a href="/">Mas Detalles</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <img src="https://i.postimg.cc/Kc740s44/piscina.jpg" alt="Piscina">
