@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curupira Travel</title>
+
+    <style>
+        :root{
+            --ls: 1.6rem;
+            --md: 2em;
+            --lg: 2.4rem;
+            --white: #ffffff;
+            --black: #000000;
+            --one: #E94938;
+            --two: #B68F6C;
+            --three: #563419;
+            --four: #EBCD47;
+            --five: #4C877A;
+            --six: #528F66;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+
+        }
+        body{
+            font-size: var(--md);
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            background-image: url(https://i.postimg.cc/v8vHrgSV/pexels-pixabay-460621.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        header{
+            background-color:var(--one);
+            width: 100%;
+            height: 80px;
+            box-shadow: var(--black) 0px 5px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px;
+            list-style: none;
+            color: var(--white);
+        }
+        .redes{
+            display: flex;
+        }
+        .redes li{
+            margin-left: 18px;
+            list-style: none;
+
+        }
+        .redes a{
+            color: var(--white);
+            text-decoration: none;
+        }
+        .news{
+            font-size: var(--lg);
+            font-weight: bold;
+        }
+        .account{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--white);
+        }
+        .account img{
+            width: 52px;
+            border-radius: 50%;
+        }
+
+
+        .nav-bar{
+            width: 100%;
+            height: 100px;
+            background-color: var(--six);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+        }
+        .nav-bar ul{
+            display: flex;
+            list-style: none;
+        }
+        .nav-bar li{
+            margin-right: 24px;
+        }
+        .nav-bar a{
+            text-decoration: none;
+            color: var(--four);
+            font-size: var(--lg);
+        }
+        .cover{
+            height: 800px;
+            text-align: center;
+            line-height: 500px;
+            font-size: 12rem;
+            color: var(--white);
+            text-shadow: var(--one) 15px 15px 15px;
+        }
+        .article{
+            width: 80%;
+            background-color: rgb(210, 231, 217);
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            align-items: center;
+            padding: 24px;
+            border-bottom: 1px dashed var(--black);
+        }
+        .article img{
+            width: 60%;
+            height: 600px;
+            object-fit: cover;
+        }
+        .description{
+            width: 40%;
+            /* height: 600px; */
+            padding-right: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .description h1{
+            font-size: 6rem;
+            margin-bottom: 24px;
+
+        }
+        .article-kit{
+            background-color: #b9c7b8;
+            border: 1px dashed var(--black);
+            color:var(--black);
+            font-weight: bold;
+            padding: 18px;
+            margin-top: 36px;
+        }
+        .article-kit p{
+            margin-top: 8px;
+        }
+        .box-detail{
+            background-color: var(--six);
+            border: 1px dashed var(--black);
+            border-top: none;
+            height: 56px;
+            display: grid;
+        }
+        .box-detail ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            align-self: center;
+        }
+        .box-detail li{
+            border: 1px solid var(--white);
+            border-radius: 8px;
+            padding: 8px;
+        }
+        .box-detail a{
+            text-decoration: none;
+            color: var(--white);
+            font-weight: bold;
+        }
+        .footer{
+            height: 40px;
+            background-color: var(--black);
+            color: var(--white);
+            
+        }
+        .footer p{
+            position: absolute;
+            right: 0;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <ul class="redes">
+                <li>
+                    <a href="/">Instagram</a>
+                </li>
+                <li>
+                    <a href="/">Facebook</a>
+                </li>
+                <li>
+                    <a href="/">Whatsapp</a>
+                </li>
+                <li>
+                    <a href="/">Twitter</a>
+                </li>
+            </ul>
+            <p class="news">Disfurta un dia en familia inolvidable</p>
+            <a href="/" class="account">
+                <img src="https://i.postimg.cc/RFHJCSMT/logo.jpg" alt="perfil">
+                <p>Log in</p>
+            </a>
+        </header>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="/">Inicio</a>
+                </li>
+                <li>
+                    <a href="/">Planes</a>
+                </li>
+                <li>
+                    <a href="/">Contactanos</a>
+                </li>
+                <li>
+                    <a href="/">PQR</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="content">
+            <div class="cover">
+                <!-- <img src="./img/pexels-pixabay-460621.jpg" alt="Panorama"> -->
+                <h1>Curupira Travel</h1>
+
+            </div>
+            <article class="article">
+                <div class="description">
+                    <h1>Servicio de Piscina</h1>
+                    <p>Tenemos piscinas con olas para publico, o sola para ti si asi lo deseas, con anticipacion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus impedit corrupti possimus hic enim laborum assumenda ipsum, molestiae praesentium adipisci libero esse, ullam consequatur explicabo voluptates nobis, earum quam?</p>
+                    <div class="article-kit">
+                        <p>$20.000</p>
+                        <p>Una persona</p>
+                        <p>Gratis bebida</p>
+                    </div>
+                    <div class="box-detail">
+                        <ul>
+                            <li>
+                                <a href="/">Reservar</a>
+                            </li>
+                            <li>
+                                <a href="/">Mas Detalles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="https://i.postimg.cc/Kc740s44/piscina.jpg" alt="Piscina">
+                
+            </article>
+            <article class="article">
+                <div class="description">
+                    <h1>Caminata al aire libre</h1>
+                    <p>Te guiaremos a una caminata por maravillosos senderos de flora y fauna. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus impedit corrupti possimus hic enim laborum assumenda ipsum, molestiae praesentium adipisci libero esse, ullam consequatur explicabo voluptates nobis, earum quam?</p>
+                    <div class="article-kit">
+                        <p>$20.000</p>
+                        <p>Una persona</p>
+                        <p>Gratis bebida</p>
+                    </div>
+                    <div class="box-detail">
+                        <ul>
+                            <li>
+                                <a href="/">Reservar</a>
+                            </li>
+                            <li>
+                                <a href="/">Mas Detalles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="https://i.postimg.cc/yYB3BC2F/273012203-103191272290232-9130648754447244649-n.jpg" alt="Piscina">
+                
+            </article>
+            <article class="article">
+                <div class="description">
+                    <h1>Caminata al aire libre</h1>
+                    <p>Te guiaremos a una caminata por maravillosos senderos de flora y fauna. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus impedit corrupti possimus hic enim laborum assumenda ipsum, molestiae praesentium adipisci libero esse, ullam consequatur explicabo voluptates nobis, earum quam?</p>
+                    <div class="article-kit">
+                        <p>$20.000</p>
+                        <p>Una persona</p>
+                        <p>Gratis bebida</p>
+                    </div>
+                    <div class="box-detail">
+                        <ul>
+                            <li>
+                                <a href="/">Reservar</a>
+                            </li>
+                            <li>
+                                <a href="/">Mas Detalles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="https://i.postimg.cc/Kc740s44/piscina.jpg" alt="Piscina">
+                
+            </article>
+            <article class="article">
+                <div class="description">
+                    <h1>Servicio de Piscina</h1>
+                    <p>Tenemos piscinas con olas para publico, o sola para ti si asi lo deseas, con anticipacion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus impedit corrupti possimus hic enim laborum assumenda ipsum, molestiae praesentium adipisci libero esse, ullam consequatur explicabo voluptates nobis, earum quam?</p>
+                    <div class="article-kit">
+                        <p>$20.000</p>
+                        <p>Una persona</p>
+                        <p>Gratis bebida</p>
+                    </div>
+                    <div class="box-detail">
+                        <ul>
+                            <li>
+                                <a href="/">Reservar</a>
+                            </li>
+                            <li>
+                                <a href="/">Mas Detalles</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img src="https://i.postimg.cc/Kc740s44/piscina.jpg" alt="Piscina">
+                
+            </article>
+        </section>
+        <footer class="footer">
+            <p>Carlos Galeano 2022.</p>
+        </footer>
+    </div>
+</body>
+</html>
