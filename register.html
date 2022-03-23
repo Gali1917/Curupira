@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./style-account.css">
+    <link rel="stylesheet" href="./style-register.css">
     <title>Cuenta</title>
 
  </head>
@@ -26,7 +26,7 @@
                     <a href="/">Twitter</a>
                 </li>
             </ul>
-            <p class="news">Cuenta Cucupira</p>
+            <p class="news">Regitrar Cuenta</p>
             <a href="./index.html" class="account">
                 <img src="https://i.postimg.cc/X72c8rqG/atras.png" alt="perfil">
 
@@ -35,7 +35,6 @@
         
         <section class="content">
             <div class="cover">
-                
                 <figure class="redes-img">
                     <a href="/">
                         <img src="https://i.postimg.cc/zBjP0pFg/instagram.png" alt="">
@@ -52,28 +51,25 @@
                 </figure>
             </div>
             <form action="/">
-                <h1>Ingresar:</h1>
+                <h1>Registrar:</h1>
                 <figure>
                     <img src="https://i.postimg.cc/4xgdyBp4/user.png" alt="perfil">
 
                 </figure>
                 <div class="signin">
+                    <label for="input-name">Nombre: </label>
+                    <input type="name" id="input-name" placeholder="Curupira">
 
                     <label for="input-email">Email: </label>
                     <input type="email" id="input-email" placeholder="example@mail.com">
-                    
+ 
                     <label for="input-password">Password: </label>
                     <input type="password" id="input-password" placeholder="********">
+
+                    <label for="input-repeat-password">Repetir Password: </label>
+                    <input type="password" id="input-repeat-password" placeholder="********">
                 </div>
-
-                <button id="button-signin" type="button" onClick="input()">Sign in</button>
-                <a href="/" id="reset-password">Recordar contraseña</a>
-
-                <div class="signup">
-                    <p>No tienes cuenta?</p>
-                    <a href="./register.html">Registrate!</a>
-
-
+                <button id="button-signup" type="button">Sign Up</button>
                 </div>
             </form>
         </section>
